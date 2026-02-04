@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDF6F0;
+  --foreground: #333333;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* SODAX Primary Colors (Warm Coral) */
+  --color-primary-DEFAULT: #E8A87C;
+  --color-primary-light: #F0C19A;
+  --color-primary-dark: #D4886C;
+  --color-primary-50: #FDF6F2;
+  --color-primary-100: #FBEEE5;
+  --color-primary-200: #F6D9C5;
+  --color-primary-300: #F0C19A;
+  --color-primary-400: #E8A87C;
+  --color-primary-500: #E8A87C;
+  --color-primary-600: #D4886C;
+  --color-primary-700: #B86F55;
+  --color-primary-800: #9C5A43;
+  --color-primary-900: #7A4633;
+
+  /* SODAX Accent Colors (Golden Yellow) */
+  --color-accent-DEFAULT: #F5B841;
+  --color-accent-light: #F8C962;
+  --color-accent-dark: #E5A030;
+  --color-accent-50: #FFFBF0;
+  --color-accent-100: #FEF6DC;
+  --color-accent-200: #FDEDB9;
+  --color-accent-300: #FBE196;
+  --color-accent-400: #F8CA6C;
+  --color-accent-500: #F5B841;
+  --color-accent-600: #E5A030;
+  --color-accent-700: #C88922;
+  --color-accent-800: #A97118;
+  --color-accent-900: #8A5C12;
+
+  /* SODAX Background (Cream) */
+  --color-background-DEFAULT: #FDF6F0;
+  --color-background-cream: #FDF6F0;
+  --color-background-light: #FFFCF8;
+  --color-background-dark: #F8EDE2;
+
+  /* SODAX Text Colors (Dark Charcoal) */
+  --color-text-DEFAULT: #333333;
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-text-light: #CCCCCC;
+
+  /* SODAX Border Radius (Warm, approachable) */
+  --radius-DEFAULT: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  /* Font Configuration */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
