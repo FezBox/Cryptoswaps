@@ -1,28 +1,12 @@
 /**
- * Core type definitions for SODAX
- * Phase 1: Basic placeholder types
+ * Central export for all type definitions
  */
 
-export type Chain = {
-  id: string;
-  name: string;
-  logo: string;
-  nativeToken: string;
-};
-
-export type Token = {
-  symbol: string;
-  name: string;
-  address: string;
-  decimals: number;
-  logo: string;
-  chainId: string;
-};
-
-export type SwapRoute = {
-  fromChain: string;
-  toChain: string;
-  fromToken: Token;
-  toToken: Token;
-  amount: string;
-};
+export type { ChainId, Chain } from "./chain";
+export type { Token } from "./token";
+export type { SwapQuote } from "./swap";
+export type {
+  TransactionType,
+  TransactionStatus,
+  Transaction,
+} from "./transaction";
